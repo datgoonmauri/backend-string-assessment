@@ -24,11 +24,15 @@
 # So donuts(5) returns 'Number of donuts: 5'
 # and donuts(23) returns 'Number of donuts: many'
 def donuts(count):
-    if count > 9:
-        howmany = "many"
-    else:
-        howmany = str(count)
-        return 'Number of donuts:' + howmany
+    print ("""Number of donuts:""")
+    for 5 in count:
+        if count < 5:
+            return "many"
+        else:
+             count == 5
+                return count
+
+
 # B. both_ends
 # Given a string s, return a string made of the first 2
 # and the last 2 chars of the original string,
@@ -74,6 +78,8 @@ def test(got, expected):
     else:
         prefix = '  X '
     print('{} got: {} expected: {}'.format(prefix, repr(got), repr(expected)))
+    
+
 # Provided main() calls the above functions with interesting inputs,
 # using test() to check if each result is correct or not.
 def main():
@@ -110,5 +116,3 @@ def main():
 # Standard boilerplate (python idiom) to call the main() function.
 if __name__ == '__main__':
     main()
-
-    
